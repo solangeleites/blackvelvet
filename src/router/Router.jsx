@@ -4,7 +4,7 @@ import Home from '../pages/home/Home';
 import Products from '../pages/products/Products';
 import About from '../pages/about/About';
 import Contact from '../pages/contact/Contact';
-import Layout from '../components/Layout/Layout';
+import Layout from '../components/layout/Layout';
 const Router = () => {
   return (
     <BrowserRouter>
