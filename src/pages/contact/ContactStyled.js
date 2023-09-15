@@ -7,7 +7,7 @@ export const SectionStyled = styled.section`
   height: 100vh;
   width: 100%;
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
 
   ${tablet} {

@@ -12,7 +12,6 @@ const Contact = () => {
   return (
     <SectionStyled>
         <Image src='/assets/contact.jpg'></Image>
-        <TitleStyled>Contactate con nosotros!</TitleStyled>
 
         <ContainerForm
           initialValues={FormInitialValues}
