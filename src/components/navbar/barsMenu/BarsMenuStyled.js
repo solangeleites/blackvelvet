@@ -1,7 +1,7 @@
 import { styled } from 'styled-components';
 
 export const ToggleContainer = styled.div`
-  color: white;
+  color: #D6D5C9;
   height: 55%;
   width: 2.2rem;
   cursor: pointer;
@@ -21,13 +21,13 @@ export const Icon = styled.span`
   position: relative;
   height: 1.5px;
   width: 75%;
-  background: ${(props) => (props.clicked ? 'transparent' : 'white')};
+  background: ${(props) => (props.clicked ? 'transparent' : '#D6D5C9')};
   display: inline-block;
   transition: all 0.3s;
 
   &::before,
   &::after {
-    background-color: white;
+    background-color: #D6D5C9;
     content: '';
     width: 100%;
     height: 1.5px;

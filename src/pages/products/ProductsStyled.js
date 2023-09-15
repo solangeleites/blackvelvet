@@ -1,9 +1,10 @@
 import { styled } from 'styled-components';
+import {tablet} from '../../queries/MediaQueries';
 
 export const SectionStyled = styled.section`
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   padding: 70px 0;
   background-color: var(--black);
@@ -11,7 +12,7 @@ export const SectionStyled = styled.section`
 
 export const Container = styled.div`
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   background-color: var(--black);
   width: 100%;
@@ -33,6 +34,17 @@ height: 400px;
 width: 350px;
 margin: 0px 0px 50px 0px;
 background-color: var(--black);
+transition: 0.5s;
+
+
+&:hover {
+  transform: scale(1.05);
+}
+
+${tablet} {
+  transition: 0.7;
+}
+
 `;
 export const Image = styled.img`
 object-fit: cover;

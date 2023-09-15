@@ -5,8 +5,9 @@ export const SectionStyled = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 70px 0;
+  /* padding: 70px 0; */
   height: 70vh;
+  margin: 0 auto;
   background-color:#0A100D;
 
 `;

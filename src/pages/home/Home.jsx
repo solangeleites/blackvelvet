@@ -5,7 +5,7 @@ import { Image } from './HomeStyled';
 const Home = () => {
   return (
     <Section>
-      <Image src="/assets/home.jpg"></Image>
+      {/* <Image src="/assets/home.jpg"></Image> */}
     </Section>
   );
 };

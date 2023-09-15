@@ -4,23 +4,24 @@ import { LinkItemStyled } from './LinkItem/LinkItemStyled';
 import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { MenuContext } from '../../context/Context';
-
+import { LinkItemPickStyled } from './LinkItemPick/LinkItemPickStyled';
+import BarsMenu from './BarsMenu/BarsMenu';
 const Navbar = () => {
   const navigate = useNavigate();
   const ctx = useContext(MenuContext);
   return (
     <NavbarStyled>
       <Logo onClick={() => navigate('/')}>BLACK VELVET</Logo>
-      <LinkContainer >
+      <LinkContainer isOpen={ctx.isMenuOpen} >
         <LinkItemStyled to="/">Inicio</LinkItemStyled>
         <LinkItemStyled to="Products">Productos</LinkItemStyled>
         <LinkItemStyled to="Contact">Contacto</LinkItemStyled>
-        <LinkItemStyled to="https://api.whatsapp.com/send?phone=5491164072744&text=Hola!" style={{height:'40px', width:'150px',borderRadius:'20px' , background:'var(--red)'}}>Hacer pedido</LinkItemStyled>
+        <LinkItemPickStyled to="https://api.whatsapp.com/send?phone=5491164072744&text=Hola!">Hacer pedido</LinkItemPickStyled>
       </LinkContainer>
+      <BarsMenu />
     </NavbarStyled> 
   );
 };
 
 
-// isOpen={ctx.isMenuOpen} agregar esto al link container
 export default Navbar;

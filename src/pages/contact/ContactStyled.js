@@ -1,29 +1,49 @@
-import styled from "styled-components";
+import styled from 'styled-components';
+import { Formik, Form } from 'formik';
+import { tablet } from '../../queries/MediaQueries';
 
 export const SectionStyled = styled.section`
-background-color: var(--black);
-height: 100vh;
-width: 100%;
-display: flex;
-justify-content: center;
-align-items: center;
-`;
+  background-color: var(--black);
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
-export const ContainerStyled = styled.div`
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-width: 100%;
-height: 100%;
-background-color: pink;
-border: 1px solid black;
+  ${tablet} {
+    flex-direction: column;
+  }
 `;
 
 export const TitleStyled = styled.h2`
-font-size: 18px;
-font-weight: 400;
-margin-bottom: 20px;
-color: white;
+  display: flex;
+  top: 0;
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--dark-beige);
+  z-index: 1;
 `;
 
+export const Image = styled.img`
+  display: flex;
+  height: 600px;
+  width: 700px;
+  object-fit: cover;
+  position: relative;
+
+  ${tablet} {
+    display: none;
+  }
+`;
+export const ContainerForm = styled(Formik)`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+`;
+
+export const Formulario = styled(Form)`
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 600px;
+`;
