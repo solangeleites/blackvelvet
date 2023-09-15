@@ -5,7 +5,7 @@ import { useNavigate } from 'react-router-dom';
 import { useContext } from 'react';
 import { MenuContext } from '../../context/Context';
 import { LinkItemPickStyled } from './LinkItemPick/LinkItemPickStyled';
-import BarsMenu from './BarsMenu/BarsMenu';
+import BarsMenu from './barsMenu/BarsMenu';
 const Navbar = () => {
   const navigate = useNavigate();
   const ctx = useContext(MenuContext);
