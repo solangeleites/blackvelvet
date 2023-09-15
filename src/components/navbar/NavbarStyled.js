@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { tablet } from '../../queries/MediaQueries';
 
 export const NavbarStyled = styled.nav`
-  background-color: #0a100d;
+  background-color: transparent;
   display: flex;
   height: 80px;
   width: 100%;

@@ -16,7 +16,7 @@ const Navbar = () => {
         <LinkItemStyled to="/">Inicio</LinkItemStyled>
         <LinkItemStyled to="Products">Productos</LinkItemStyled>
         <LinkItemStyled to="Contact">Contacto</LinkItemStyled>
-        <LinkItemPickStyled to="https://api.whatsapp.com/send?phone=5491164072744&text=Hola!">Hacer pedido</LinkItemPickStyled>
+        <LinkItemPickStyled to="https://api.whatsapp.com/send?phone=5491121677354&text=Hola, me gustaría hacer un pedido">Hacer pedido</LinkItemPickStyled>
       </LinkContainer>
       <BarsMenu />
     </NavbarStyled> 
